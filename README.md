@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# React Split Bill App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React application called "React Split Bill App" that helps users split bills with their friends. The app allows users to manage a list of friends, select a friend to split a bill with, and calculate the split amount based on the bill value and who is paying. The app also provides options to add new friends and keeps track of the balances between the user and each friend.
 
-## Available Scripts
+## Functionality
 
-In the project directory, you can run:
+The React Split Bill App provides the following functionality:
 
-### `npm start`
+- **Friends List**: Displays a list of friends with their names, profile images, and balances. The balance is color-coded to indicate whether the friend owes the user money (in red) or the user owes the friend money (in green). If the balance is zero, it indicates that the user and the friend are even.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Selecting a Friend**: Users can select a friend from the list to split a bill with. When a friend is selected, additional options for splitting the bill are displayed.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Splitting a Bill**: Users can enter the bill value and the amount paid by the user. The app calculates the amount owed by the friend based on the selected payment option (user or friend). The balances are updated accordingly.
 
-### `npm test`
+- **Adding a Friend**: Users can add new friends by providing their name and profile image URL. The new friend is added to the friends list with an initial balance of 0.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+To run the React Split Bill App locally, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository: `git clone [repository_url]`
+2. Navigate to the project directory: `cd react-split-bill-app`
+3. Install the dependencies: `npm install`
+4. Start the development server: `npm start`
+5. Open the app in your browser at `http://localhost:3000`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The React Split Bill App is built using the following technologies:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- React: A JavaScript library for building user interfaces.
+- useState: A React Hook for managing state within functional components.
